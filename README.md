@@ -12,7 +12,7 @@ A highstate will be triggered for all boxes during the Salt provisioning process
 
 ## Usage
 
-Usage is pretty simple:
+Bringing the environment online is relatively easy and requires the following commands:
 
 ```ShellSession
 vagrant plugin install vagrant-vbguest
@@ -21,3 +21,9 @@ vagrant up
 ```
 
 Then a simple `vagrant ssh master` command followed by `sudo su` should give full access to the Salt master.
+
+## Requirements
+
+* Vagrant is (of course) required
+* Virtualbox (default provider for Vagrant)
+* A local installation of Salt is also required for the dynamic key generation.
